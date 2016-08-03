@@ -10,7 +10,7 @@ WORKDIR /mRapidMFToHadoop
 # Assumes docker build is run from /myapp/src
 #ADD /var/lib/jenkins/workspace/Data_Ingestion/target/mRapidMFToHadoop-0.0.1-SNAPSHOT.jar /home/bigdata_coe/chaitali_workspace/jar
 
-ADD src /mRapidMFToHadoop/src
+ADD /mRapidMFToHadoop /mRapidMFToHadoop/src
 
 # Run the app when the container is executed.
 #CMD ["java", "-jar mRapidMFToHadoop-0.0.1-SNAPSHOT.jar"]
